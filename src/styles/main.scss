@@ -1,0 +1,128 @@
+// src/styles/main.scss
+
+// Variables
+$font-stack: 'Helvetica Neue', Arial, sans-serif;
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$danger-color: #e74c3c;
+$background-color: #f4f4f4;
+$text-color: #333;
+
+// Global styles
+body {
+  font-family: $font-stack;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-color;
+  margin-bottom: 10px;
+}
+
+// Form styles
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+input, textarea, select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input[type="submit"], button {
+  background: $primary-color;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background: darken($primary-color, 10%);
+  }
+}
+
+// Movie list styles
+.movie-list {
+  list-style: none;
+  padding: 0;
+
+  .movie-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .movie-details {
+    flex: 1;
+
+    h2 {
+      margin: 0 0 10px;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  }
+
+  .movie-actions {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// Rating styles
+.rating {
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 20px;
+    color: $secondary-color;
+
+    &.active {
+      color: $primary-color;
+    }
+  }
+}
+
+// Error message styles
+.error-message {
+  color: $danger-color;
+  background: lighten($danger-color, 40%);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
