@@ -1,3 +1,3 @@
-const BASE_URL = 'http://localhost:9091';
+const BASE_URL = 'https://wishlist-engine.onrender.com';
 
 export default BASE_URL;
