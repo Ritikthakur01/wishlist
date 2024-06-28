@@ -1,0 +1,57 @@
+.movie-list-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+  .login-message{
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+  }
+
+
+  .movie-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+    .movie-details {
+      h3 {
+        margin-top: 0;
+      }
+    }
+
+    .movie-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 18px;
+
+      .icon {
+        margin-left: 10px;
+        cursor: pointer;
+        color: #333;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #007bff;
+        }
+      }
+    }
+  }
+
+  .error-message {
+    color: red;
+  }
+
+  .login-message {
+    color: #555;
+  }
+}

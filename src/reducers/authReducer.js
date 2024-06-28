@@ -1,5 +1,5 @@
     // reducers/authReducer.js
-import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_SUCCESS, SIGNUP_FAILURE } from '../constants/actionTypes';
+import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_SUCCESS, SIGNUP_FAILURE, LOGOUT  } from '../constants/actionTypes';
 
 const initialState = {
   isAuthenticated: false,
@@ -13,7 +13,7 @@ const authReducer = (state = initialState, action) => {
       return {
         ...state,
         isAuthenticated: true,
-        user: action.payload,
+        user: action.payload.user.user,
         error: null
       };
     case LOGIN_FAILURE:
@@ -32,6 +32,12 @@ const authReducer = (state = initialState, action) => {
       return {
         ...state,
         error: action.payload
+      };
+    case LOGOUT:
+      return {
+        ...state,
+        user: null,
+        error: null,
       };
     default:
       return state;

@@ -1,0 +1,48 @@
+// AddEditMovieForm.scss
+
+.form-card {
+    margin: auto;
+    margin-top: 60px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 14px;
+    padding: 20px;
+    width: 40%; /* Adjust width as needed */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-card h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-card form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-card input,
+  .form-card textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: auto;
+  }
+  
+  .form-card button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .form-card button:hover {
+    background-color: #0056b3;
+  }
+  

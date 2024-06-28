@@ -20,7 +20,6 @@ const MovieDetailsPage = () => {
       <p>Watched: {movie.watched ? 'Yes' : 'No'}</p>
       <p>Rating: {movie.rating}</p>
       <p>Review: {movie.review}</p>
-      {/* Add buttons for editing or deleting movie */}
     </div>
   );
 };
